@@ -432,9 +432,9 @@ See the `LICENSE` file for more information.
 
 Cloud & DevOps Engineer
 
-GitHub: **https://github.com/YOUR_USERNAME**
+GitHub: **https://github.com/Shivam-Malik-Dev**
 
-LinkedIn: **https://linkedin.com/in/YOUR_PROFILE**
+LinkedIn: **https://www.linkedin.com/in/shivam-malik-59b13a29b/**
 
 ---
 
