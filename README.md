@@ -16,27 +16,8 @@
 
 ---
 
-## 📖 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Project Objectives](#-project-objectives)
-- [Key Features](#-key-features)
-- [Architecture Diagram](#-architecture-diagram)
-- [AWS Services Used](#-aws-services-used)
-- [Project Structure](#-project-structure)
-- [Deployment Workflow](#-deployment-workflow)
-- [Project Screenshots](#-project-screenshots)
-- [Documentation](#-documentation)
-- [Skills Demonstrated](#-skills-demonstrated)
-- [Future Improvements](#-future-improvements)
-- [License](#-license)
-- [Author](#-author)
-
----
 
 # 📌 Project Overview
-
-Modern production applications must remain available even when servers fail or traffic suddenly increases.
 
 This project demonstrates how to build a **Highly Available**, **Fault-Tolerant**, and **Scalable AWS Infrastructure** using core AWS services such as **Application Load Balancer**, **Auto Scaling Group**, **Amazon EC2**, **CloudWatch**, and **Amazon SNS**.
 
@@ -48,40 +29,6 @@ This project simulates a real-world cloud architecture commonly used for hosting
 
 ---
 
-# 🎯 Project Objectives
-
-- Build a Highly Available Infrastructure
-- Eliminate Single Point of Failure
-- Automatically Scale Infrastructure
-- Improve Fault Tolerance
-- Automatically Replace Failed Instances
-- Implement Load Balancing
-- Monitor Infrastructure Health
-- Receive Operational Notifications
-- Follow AWS Best Practices
-- Demonstrate Production-Ready Infrastructure Design
-
----
-
-# ⭐ Key Features
-
-- Highly Available AWS Architecture
-- Multi Availability Zone Deployment
-- Application Load Balancer
-- Auto Scaling Group
-- Launch Template
-- Ubuntu EC2 Instances
-- Nginx Web Server
-- Automated EC2 Provisioning using User Data
-- CloudWatch Monitoring
-- Amazon SNS Notifications
-- Automatic Instance Recovery
-- Health Checks
-- Production-Oriented Infrastructure
-- Fault Tolerant Design
-- Scalable Architecture
-
----
 
 # 🏗️ Architecture Diagram
 
@@ -191,117 +138,6 @@ Validate Infrastructure
 
 ---
 
-# 📸 Project Screenshots
-
-The following screenshots demonstrate the complete deployment process.
-
-| Step | Screenshot |
-|------|------------|
-| Custom VPC | `screenshots/01-vpc.png` |
-| Public Subnets | `screenshots/02-public-subnets.png` |
-| Route Table | `screenshots/03-route-table.png` |
-| Internet Gateway | `screenshots/04-internet-gateway.png` |
-| Security Group | `screenshots/05-security-group.png` |
-| Launch Template | `screenshots/06-launch-template.png` |
-| Auto Scaling Group | `screenshots/07-auto-scaling-group.png` |
-| Application Load Balancer | `screenshots/08-load-balancer.png` |
-| Target Group | `screenshots/09-target-group.png` |
-| Health Checks | `screenshots/10-health-check.png` |
-| CloudWatch Alarm | `screenshots/11-cloudwatch-alarm.png` |
-| Amazon SNS | `screenshots/12-sns-topic.png` |
-| Final Output | `screenshots/13-final-output.png` |
-| Instance Switching | `screenshots/14-instance-switching.png` |
-
----
-# 📚 Documentation
-
-Detailed project documentation has been organized into separate documents for better readability and maintenance.
-
-| Document | Description |
-|----------|-------------|
-| `docs/architecture.md` | Complete infrastructure architecture and design explanation |
-| `docs/deployment-guide.md` | Step-by-step deployment guide |
-| `docs/testing-validation.md` | Infrastructure testing and validation results |
-| `docs/troubleshooting.md` | Common issues and troubleshooting guide |
-
----
-
-# 🧪 Testing Summary
-
-The deployed infrastructure was validated using multiple functional and operational tests.
-
-| Test | Status |
-|------|--------|
-| Website Accessibility | ✅ Passed |
-| Application Load Balancer | ✅ Passed |
-| Target Group Health Checks | ✅ Passed |
-| Auto Scaling | ✅ Passed |
-| Instance Replacement | ✅ Passed |
-| CloudWatch Monitoring | ✅ Passed |
-| SNS Notifications | ✅ Passed |
-| Nginx Deployment | ✅ Passed |
-
-> 📖 Detailed testing procedure and validation results are available in:
-
-```
-docs/testing-validation.md
-```
-
----
-
-# ⚙️ Auto Scaling Demonstration
-
-Auto Scaling behavior was validated by generating CPU load on the running EC2 instance.
-
-```bash
-stress-ng --cpu 2 --timeout 300s
-```
-
-During testing:
-
-- CloudWatch detected increased CPU utilization.
-- Alarm entered the **ALARM** state.
-- Auto Scaling Group launched additional EC2 instances.
-- Newly launched instances automatically executed the User Data script.
-- Nginx was installed automatically.
-- Instances were registered with the Target Group.
-- The Application Load Balancer started routing traffic to the new healthy instances.
-
-This demonstrates a production-style automatic scaling workflow without manual intervention.
-
----
-
-# ❤️ High Availability Validation
-
-The infrastructure was designed to eliminate a single point of failure.
-
-Validation included:
-
-- Multi Availability Zone deployment
-- Automatic traffic distribution
-- Automatic unhealthy instance replacement
-- Load balancing across healthy targets
-- Continuous health monitoring
-- Automatic scaling based on workload
-
-The application remained available throughout testing.
-
----
-
-# 🔒 Security Considerations
-
-The project follows several AWS security best practices.
-
-- Security Groups used to control network access
-- IAM used for secure service permissions
-- Launch Template used for standardized deployments
-- Health Checks configured through Target Group
-- Infrastructure isolated within a custom Amazon VPC
-- Internet access controlled through Internet Gateway and Route Tables
-
-> Future enhancements such as HTTPS, ACM certificates and WAF can further improve the security posture.
-
----
 
 # 💡 Challenges Faced
 
@@ -326,53 +162,6 @@ docs/troubleshooting.md
 
 ---
 
-# 🎯 Skills Demonstrated
-
-This project demonstrates practical experience with:
-
-### AWS
-
-- Amazon EC2
-- Amazon VPC
-- Internet Gateway
-- Route Tables
-- Security Groups
-- Launch Templates
-- Application Load Balancer
-- Target Groups
-- Auto Scaling Group
-- CloudWatch
-- Amazon SNS
-- IAM
-
-### Linux
-
-- Ubuntu Server
-- Package Management
-- Service Management
-- User Data Automation
-
-### Web Server
-
-- Nginx
-
-### Networking
-
-- Load Balancing
-- High Availability
-- Health Checks
-- Fault Tolerance
-
-### DevOps
-
-- Infrastructure Design
-- Infrastructure Automation
-- Monitoring
-- Troubleshooting
-- Documentation
-- Production Deployment Practices
-
----
 
 # 📈 Key Learnings
 
@@ -418,13 +207,6 @@ If you have ideas to improve this project, feel free to fork the repository and 
 
 ---
 
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
-See the `LICENSE` file for more information.
-
----
 
 # 👨‍💻 Author
 
