@@ -10,7 +10,7 @@
 ![SNS](https://img.shields.io/badge/SNS-Notifications-yellow?style=for-the-badge)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?style=for-the-badge&logo=ubuntu)
 ![Nginx](https://img.shields.io/badge/Nginx-Web_Server-009639?style=for-the-badge&logo=nginx)
-![License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge)
+
 
 </p>
 
